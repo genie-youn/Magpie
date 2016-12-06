@@ -2,13 +2,13 @@ package com.tcp.geine.vo;
 
 import java.util.Date;
 
-public final class Sms {
+public class Sms {
 
-	private final String applicationName;
-	private final String receiveNumber;
-	private final String content;
-	private final Date reserveDate;
-	private final String sendNumber;
+	private String applicationName;
+	private String receiveNumber;
+	private String content;
+	private Date reserveDate;
+	private String sendNumber;
 	
 	public Sms(String applicationName, String receiveNumber, String content, Date reserveDate, String sendNumber) {
 		
@@ -21,6 +21,10 @@ public final class Sms {
 		this.reserveDate = reserveDate;
 		this.sendNumber = sendNumber;
 	}
+	
+	public Sms(){
+		super();
+	};
 
 	public String getApplicationName() {
 		return applicationName;
@@ -40,6 +44,26 @@ public final class Sms {
 
 	public String getSendNumber() {
 		return sendNumber;
+	}
+	
+	public void setApplicationName(String applicationName) {
+		this.applicationName = applicationName;
+	}
+
+	public void setReceiveNumber(String receiveNumber) {
+		this.receiveNumber = receiveNumber;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public void setReserveDate(Date reserveDate) {
+		this.reserveDate = reserveDate;
+	}
+
+	public void setSendNumber(String sendNumber) {
+		this.sendNumber = sendNumber;
 	}
 
 	@Override
